@@ -38,8 +38,12 @@
     background-color: #52489c;
 
   }
+  .logo {
+    color: #ebebeb;
+  }
   h1 {
     margin-bottom: 20px;
+  
   }
   nav {
     display: flex;
