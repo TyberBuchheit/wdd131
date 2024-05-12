@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+ }
+ body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+  }
+  a::visited {
+    color: var(--accent-color);
+  }
+  a {
+    font-size: 26px;
+    line-height: 32px;
+    color: #ebebeb;
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header {
+    text-align: center;
+    padding:  0;
+    background-color: #52489c;
+
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+nav ul {
+    list-style-type: none;
+    margin: 50px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ebebeb;
+    margin: 0 50px;
+}
+main {
+    position: relative;
+}
+.title {
+    display: block;
+    justify-content: center;
+    height: 50px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+}
+.gallery {
+   display: block;
+   justify-items: center;
+   overflow: hidden;
+}
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 200px 40px 200px; 
+
+}
+img {
+    border: #ebebeb solid 0.5rem;
+    box-shadow: 0 10px 20px #333;
+}
+  footer {
+    font-size: 26px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    justify-content: space-between;
+    color: #ebebeb;
+    background-color: #52489c;
+  }
+  p {
+    margin-left: 200px;
+  }
+
+  @media screen and (min-width: 700px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
