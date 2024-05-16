@@ -116,4 +116,7 @@ p {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
+  nav {
+    flex-direction: column;
+  }
 }
