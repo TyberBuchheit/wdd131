@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --gold-color: #efc69b;
+    --red-color: #af1b3f;
+    --dark-color: #473144;
+    --body-font: 'Helvetica', 'Arial', sans-serif;
+    --headline-font: 'Lora', 'Impact', serif;
+}
+
+body {
+    background-color: #fff;
+    font-family: var(--body-font);
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: var(--headline-font);
+    color: var(--dark-color);
+    margin: 0;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: end;
+    padding: 0;
+    list-style: none;
+    margin: 20px 0;
+    border-top: 1px solid var(--gold-color);
+    border-bottom: 1px solid var(--gold-color);
+    list-style: none;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--red-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.book-review {
+    display: grid;
+    gap: 2rem;
+}
+
+.book-review article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    padding: 20px;
+    border: 1px solid var(--gold-color);
+    border-radius: 10px;
+}
+
+.book-review article .date,
+.book-review article .age-group,
+.book-review article .genre,
+.book-review article .rating {
+    grid-column: 1 / 2;
+    padding: 5px 0;
+}
+
+.book-review article .content {
+    grid-column: 2 / 3;
+}
+
+.book-review article .content h2 {
+    font-family: var(--headline-font);
+    color: var(--red-color);
+    margin: 0 0 10px;
+}
+
+.book-review article .content img {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.book-review article p {
+    margin: 0;
+}
+
+.filters {
+    padding: 20px;
+    border: 1px solid var(--gold-color);
+    border-radius: 8px;
+}
+
+.filters h3 {
+    margin-top: 0;
+    font-family: var(--headline-font);
+}
