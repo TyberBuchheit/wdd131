@@ -68,6 +68,8 @@ header h1 {
     color: var(--red-color);
 }
 img {
+    display: block;
+    margin: 0 auto;
     width: 250px;
     height: auto;
     justify-self: center;
@@ -86,3 +88,18 @@ img {
     margin-top: 0;
     font-family: var(--headline-font);
 } 
+.skiptocontent a {
+	/* set the element to absolute positioning */
+    position: absolute;
+	/* move it off screen */
+    top: -40px;
+	/* Make sure it will be on the left edge of the screen */
+    right: 80%;
+	/* Change the background and color to something that stands out */
+    background: #af1b3f;
+    color: #fff;
+}
+.skiptocontent a:focus {
+	/* Move it back on when focused */
+    top: 0;
+}
