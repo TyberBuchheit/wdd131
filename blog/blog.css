@@ -45,7 +45,6 @@ header h1 {
 }
 
 .book-review {
-    border: 1px solid red;
     display: grid;
     gap: 1.5rem;
     padding: 2rem;
