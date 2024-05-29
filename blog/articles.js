@@ -39,44 +39,57 @@ stars: "⭐⭐⭐⭐⭐"
 }
 ];
 
-window.onscroll = function() {
+//starts addNewArticle function when user scrolls down page
+window.onload = function() {
   if(window.innerHeight + window.scrollY >= document.body.offsetHeight) {
     addNewArticle();
   }
 };
 
+//outputs all of the different information for the different articles from array
 function addNewArticle() {
+  //gets book-review id from html
   const container = document.getElementById('book-review');
+  //iterates over each element in the array
   articles.forEach(data => {
+    //variable creates new div with details class
     const detailsDiv = document.createElement('div');
     detailsDiv.setAttribute("class", "details");
 
+    //creates new h3 element with the date data from the array and adds it to the html
     const newH3Date = document.createElement('h3');
     newH3Date.textContent = data.date;
     detailsDiv.appendChild(newH3Date);
 
+    //creates new p element with the ages, genre, and stars data from the array and adds it to the html
     const newPAgeGenreStars = document.createElement('p');
     newPAgeGenreStars.innerHTML = `<p>${data.ages}</p> <p>${data.genre}</p> <p>${data.stars}</p>`;
     detailsDiv.appendChild(newPAgeGenreStars);
 
+    //appends the 'detailsDiv' <div> to the 'container' element
     container.appendChild(detailsDiv);
 
+    //variable creates a new div with content class
     const contentDiv = document.createElement('div');
     contentDiv.setAttribute("class", "content");
 
+    //creates new h2 element with the title data from the array and adds it to the html
     const newH2Title = document.createElement('h2');
     newH2Title.textContent = data.title;
     contentDiv.appendChild(newH2Title);
 
+    //creates new img tag with the imgSrc and imgAlt data from the array and adds it to the html
     const newImg = document.createElement('img');
     newImg.src = data.imgSrc;
     newImg.alt = data.imgAlt;
     contentDiv.appendChild(newImg);
 
-    const newPDiscription = document.createElement('p');
-    newPDiscription.textContent = data.description;
-    contentDiv.appendChild(newPDiscription);
+    //creates new p element with the description data from the array and adds it to the html
+    const newPDescription = document.createElement('p');
+    newPDescription.textContent = data.description;
+    contentDiv.appendChild(newPDescription);
 
+    //appends the 'contentDiv' <div> to the 'container' element
     container.appendChild(contentDiv);
   })
 }
