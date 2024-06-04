@@ -20,7 +20,6 @@
   }
 
   .viewer {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,6 +28,7 @@
     background: rgba(0, 0, 0, 0.75);
     place-items: center;
     justify-content: center;
+    z-index: 1000;
   }
   .viewer img {
     max-height: 100%;
@@ -88,13 +88,14 @@
     line-height: 2rem;
   }
 nav ul {
+    display: flex;
     list-style-type: none;
     margin: 50px;
     padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
+    display: flex;
     margin-right: 20px;
 }
 
@@ -155,5 +156,8 @@ p {
   }
   nav {
     flex-direction: column;
+  }
+  .menu-button {
+    display: none;
   }
 }
