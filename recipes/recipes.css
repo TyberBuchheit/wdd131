@@ -70,8 +70,9 @@ form {
 }
 
 h3 {
-    width: 80px;
+    width: fit-content;
     text-align: center;
+    padding: 10px;
     border: 1px solid black;
 }
 h2 {
