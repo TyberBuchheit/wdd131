@@ -27,7 +27,7 @@ function recipeTemplate(recipe) {
 
 function tagsTemplate(tags) {
     // loop through the tags list and transform the strings to HTML
-    return tags.map(tag => `<span>${tag}</span>`).join('');
+    return tags.map(tag => `<span>${tag}</span>`).join(', ');
 }
 
 // console.log(tagsTemplate);
