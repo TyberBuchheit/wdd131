@@ -1,0 +1,40 @@
+.hero-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.antigua-container1 {
+    background-color: #AE5B3B;
+    color: #000000;
+    height: 500px;
+    padding: 10px;
+    overflow: visible;
+}
+
+.antigua-container1 h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.antigua-container1 h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 15px 0 15px 0;
+}
+
+.antigua-container2 {
+    background-color: #7E91AF;
+    color: #000000;
+    height: auto;
+    padding: 30px;
+}
+
+.content-item img {
+    max-width: 20%;
+}
+
+.content-item {
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+}
